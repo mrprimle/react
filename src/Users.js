@@ -26,9 +26,9 @@ const Users = () => {
 
   return (
     <React.Fragment>
-      {isLoading ? <h3>Loading...</h3> : <div></div>}
+      {isLoading && <h3 className="compMargin">Loading...</h3>}
       {isError ? (
-        <h4>There was an error</h4>
+        <h4 className="compMargin">There was an error</h4>
       ) : (
         <h3 className="compMargin">GitHub users</h3>
       )}

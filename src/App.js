@@ -1,6 +1,7 @@
 import React from "react";
 import FlagsSection from "./FlagsSection";
 import Users from "./Users";
+import Form from "./Form";
 
 const App = () => {
   return (
@@ -10,9 +11,13 @@ const App = () => {
         <FlagsSection />
       </section>
       <hr />
-      <section className="bgGray">
+      <section className="bgGray section-pad">
         <h1 className="compMargin">UseEffect React hook practice</h1>
         <Users />
+      </section>
+      <section className="bgGrey section-pad">
+        <h1 className="compMargin">Form practice</h1>
+        <Form />
       </section>
     </React.Fragment>
   );

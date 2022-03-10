@@ -24,14 +24,17 @@ const FlagsSection = () => {
           return (
             <section key={phrase.id}>
               <Flag {...phrase}></Flag>
-              <button className="btn" onClick={() => removeItem(phrase.id)}>
+              <button
+                className="btn btn-sec"
+                onClick={() => removeItem(phrase.id)}
+              >
                 remove
               </button>
             </section>
           );
         })}
       </div>
-      <button className="btn-prime" onClick={clearAll}>
+      <button className="btn" onClick={clearAll}>
         Clear all
       </button>
     </section>
