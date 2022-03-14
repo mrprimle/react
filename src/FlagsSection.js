@@ -34,7 +34,7 @@ const FlagsSection = () => {
           );
         })}
       </div>
-      <button className="btn" onClick={clearAll}>
+      <button className="btn center" onClick={clearAll}>
         Clear all
       </button>
     </section>
