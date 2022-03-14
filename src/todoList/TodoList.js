@@ -1,36 +1,7 @@
 import React, { useReducer, useState } from "react";
 import Modal from "./Modal";
 import { data } from "../data";
-
-const reducer = (state, action) => {
-  if (action.type === "ADD_ITEM") {
-    const newTasks = [...state.taskList, action.payload];
-    return {
-      ...state,
-      taskList: newTasks,
-      modalDescription: "task added!",
-      showModal: true,
-    };
-  }
-  if (action.type === "NO_VALUE") {
-    return {
-      ...state,
-      showModal: true,
-      modalDescription: "no value",
-    };
-  }
-  if (action.type === "CLOSE_MODAL") {
-    return { ...state, showModal: false };
-  }
-  if (action.type === "REMOVE_ITEM") {
-    const newTaskList = state.taskList.filter((task) => {
-      return task.id !== action.payload;
-    });
-
-    return { ...state, taskList: newTaskList };
-  }
-  return state;
-};
+import { reducer } from "./reducer";
 
 const defaultState = {
   showModal: false,
@@ -84,6 +55,12 @@ const TodoList = () => {
           </form>
         </div>
         <section className="todo-items">
+          {state.taskList.length ? (
+            <h3>Your tasks({state.taskList.length}) for today:</h3>
+          ) : (
+            <div></div>
+          )}
+
           {state.taskList.map((task) => {
             return (
               <div key={task.id} className="item">

@@ -138,6 +138,10 @@ h1 {
   min-width: 20%;
 }
 
+.todo-items h3 {
+  color: #fff;
+}
+
 /*
 =============== 
 Variables
@@ -432,5 +436,8 @@ p {
   .item {
     width: 90vw;
     max-width: 1170px;
+  }
+  .form-bg {
+    margin-bottom: 2rem;
   }
 }
