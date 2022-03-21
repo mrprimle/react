@@ -16,9 +16,14 @@ body {
 .itemlist {
   width: 90vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 5rem 0;
   display: grid;
   gap: 2rem;
+}
+
+.clickp {
+  margin-bottom: 0.75rem;
+  margin-top: 0.25rem;
 }
 
 /* .book {
@@ -392,6 +397,7 @@ p {
   }
 }
 .product {
+  text-align: center;
   background: var(--clr-white);
   border-radius: var(--radius);
 }
@@ -405,6 +411,9 @@ p {
 }
 .product h4 {
   margin-top: 1rem;
+}
+.product p {
+  margin-bottom: 1.25rem;
 }
 
 .product button {

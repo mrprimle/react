@@ -16,7 +16,7 @@ const Flag = (props) => {
       <section onClick={showPhrase}>
         <p className="blue">{first}</p>
         <p className="yellow">{second}</p>
-        <p>clicked {count} times</p>
+        <p className="clickp">clicked {count} times</p>
       </section>
     </React.Fragment>
   );

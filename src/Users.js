@@ -30,9 +30,9 @@ const Users = () => {
       {isError ? (
         <h4 className="compMargin">There was an error</h4>
       ) : (
-        <h3 className="compMargin">GitHub users</h3>
+        <h2 className="compMargin">GitHub users</h2>
       )}
-      <ul className="users">
+      <ul className="users compMargin">
         {users.map((user) => {
           const { id, login, avatar_url, html_url } = user;
           return (

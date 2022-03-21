@@ -3,6 +3,7 @@ import FlagsSection from "./FlagsSection";
 import Users from "./Users";
 import Form from "./Form";
 import TodoList from "./todoList/TodoList";
+import Products from "./Products";
 
 const App = () => {
   return (
@@ -23,6 +24,10 @@ const App = () => {
       <section className="bgGray section-pad">
         <h1 className="compMargin">UseReducer form practice</h1>
         <TodoList />
+      </section>
+      <section className="bgGrey section-pad">
+        <h1 className="compMargin">Custom hooks & prop validation</h1>
+        <Products />
       </section>
     </React.Fragment>
   );
