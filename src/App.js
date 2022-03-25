@@ -4,6 +4,7 @@ import Users from "./Users";
 import Form from "./Form";
 import TodoList from "./todoList/TodoList";
 import Products from "./Products";
+import RouterSection from "./RouterSection";
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
       <section className="bgGrey section-pad">
         <h1 className="compMargin">Custom hooks & prop validation</h1>
         <Products />
+      </section>
+      <section className="bgGray section-pad">
+        <RouterSection />
       </section>
     </React.Fragment>
   );
