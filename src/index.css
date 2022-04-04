@@ -373,8 +373,6 @@ p {
 
 .nav-links a:hover {
   color: #fff;
-  letter-spacing: 2px;
-  transition: 0.2s ease-in;
 }
 .capabilities-content h1 {
   font-size: 2em;
@@ -438,6 +436,14 @@ p {
 .users a {
   color: #ec4858;
   text-transform: capitalize;
+}
+
+.tc {
+  text-align: center;
+}
+
+.product h4 {
+  color: #333;
 }
 
 .products {
